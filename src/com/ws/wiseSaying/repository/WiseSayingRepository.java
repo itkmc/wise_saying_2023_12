@@ -12,13 +12,13 @@ public class WiseSayingRepository {
 
 	public WiseSayingRepository() {
 
-		lastWiseSayingId = 0;
+		lastWiseSayingId = 0;//lastWiseSayingId 변수에 0를 넣는다
 		wiseSayings = new ArrayList<>();
-	}
+	}//wiseSayings 변수에 객체 ArrayList<>를 넣는다
 
 	public void remove(WiseSaying wiseSaying) {
 		wiseSayings.remove(wiseSaying);
-	}
+	}//wiseSayings에 있는 remove(wiseSaying)
 
 	public WiseSaying findById(int id) {
 		for (WiseSaying wiseSaying : wiseSayings) {
